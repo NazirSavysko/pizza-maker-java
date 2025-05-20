@@ -14,12 +14,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PizzaMakerTest {
 
-    private static PizzaMaker maker;
     private static Method method;
 
     @BeforeAll
     public static void setUp() throws NoSuchMethodException {
-        maker = new PizzaMaker();
         method = PizzaMaker.class.getDeclaredMethod("makePizza");
         method.setAccessible(true);
     }
